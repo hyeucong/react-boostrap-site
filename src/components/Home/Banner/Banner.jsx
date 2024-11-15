@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -20,13 +21,13 @@ const Banner = () => {
             </Row>
             <Row className="justify-content-center mb-5 gap-3">
                 <Col xs="auto" className='px-0'>
-                    <Button href="#" size="lg" className="px-4 bg-button-color fw-bold hover">
-                        SHOP ESSENTIALS
+                    <Button size="lg" className="px-4 bg-button-color fw-bold hover">
+                        <Link className='text-white hover' to="/shop">SHOP ESSENTIALS</Link>
                     </Button>
                 </Col>
                 <Col xs="auto" className='px-0'>
-                    <Button href="#" size="lg" className="px-4 border bg-light text-main-color fw-bold hover">
-                        LEARN MORE
+                    <Button size="lg" className="px-4 border bg-light text-main-color fw-bold hover">
+                        <Link className='text-main-color hover' to="/about">LEARN MORE</Link>
                     </Button>
                 </Col>
             </Row>
