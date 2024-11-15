@@ -1,0 +1,98 @@
+/* :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+:root {
+    --bg-main-color: #fefaf1;
+    --bg-button-color: #00574e;
+    --bg-sub-color: #fcecd5;
+    --text-main-color: #3e012f;
+    --text-sub-color: #82566b;
+}
+
+.nav-link {
+    color: var(--bg-main-color) !important;
+    font-size: larger !important;
+    font-weight: 600 !important;
+}
+
+.bg-main-color {
+    background-color: var(--bg-main-color) !important;
+}
+
+.bg-sub-color {
+    background-color: var(--bg-sub-color) !important;
+}
+
+.bg-button-color {
+    background-color: var(--bg-button-color) !important;
+    border: 1px solid var(--bg-button-color) !important;
+}
+
+.text-main-color {
+    color: var(--text-main-color) !important;
+}
+
+.text-sub-color {
+    color: var(--text-sub-color) !important;
+}
+
+body {
+    font-family: "Inter", sans-serif !important;
+    overflow-x: auto;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none !important;
+}
+
+.category-section {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 50vh !important;
+}
+
+:focus-visible {
+    outline: none !important;
+}
+
+.dropdown-toggle {
+    background-color: var(--bg-button-color) !important;
+    border: 1px solid var(--bg-button-color) !important;
+}
+
+.gutter-fix {
+    --bs-gutter-x: 3.5rem !important;
+}
+
+.hover {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.hover:hover {
+    transform: translateY(-3px);
+    transition: all 0.2s ease-in-out;
+}
+
+.hover:not(:hover) {
+    transform: translateY(0);
+    transition: all 0.2s ease-in-out;
+}
