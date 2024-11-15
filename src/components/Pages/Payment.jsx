@@ -26,9 +26,9 @@ const PaymentSuccessPage = () => {
         <Container className="py-5">
             <Row>
                 <Col>
-                    <h1>Payment Successful!</h1>
+                    <h1 className='text-main-color'>Payment Successful!</h1>
                     {orderId && <p>Your order ID is: {orderId}</p>}
-                    <p>
+                    <p className='text-sub-color'>
                         Thank you for your order. You will receive a confirmation email shortly.
                         You will be redirected to the homepage in {redirectTime} seconds.
                     </p>
