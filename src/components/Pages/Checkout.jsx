@@ -134,7 +134,9 @@ const CheckoutPage = () => {
                             <Form.Control type="text" name="country" value={formData.country} onChange={handleChange} required />
                         </Form.Group>
 
-
+                        <Button className='bg-button-color w-100 p-3 fw-bold fs-5' type="submit">
+                            Place Order
+                        </Button>
                     </Form>
                 </Col>
 
@@ -160,9 +162,6 @@ const CheckoutPage = () => {
                                 <div>${totalPrice.toFixed(2)}</div>
                             </div>
                             {discountApplied && <p>Discount applied: -10%</p>}
-                            <Button className='bg-button-color w-100 p-3 fw-bold fs-5' type="submit">
-                                Place Order
-                            </Button>
                         </Card.Body>
                     </Card>
                 </Col>
